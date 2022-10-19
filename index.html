@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel='stylesheet' href='styles.css'>
+    
+</head>
+<body>
+    <script src="main.js"></script>
+    <h2>Guess the Number</h2>
+    <div class="players">
+        <p>No. of Players:</p>
+        <button id="2" type="button" onclick="setPlayers(2)">2</button>
+        <button id="3" type="button" onclick="setPlayers(3)">3</button>
+        <button id="4" type="button" onclick="setPlayers(4)">4</button>
+        <button id="5" type="button" onclick="setPlayers(5)">5</button>
+    </div>
+    <div class="container">
+        <p id="turnmsg">Play</p>
+        <div>
+            <input id="ans" type="number" min=0 oninput="this.value = Math.abs(this.value)" value='' >
+            <button id="btn" accesskey="enter" type="button" onclick="getValueFromUser()" disabled>Enter</button>
+        </div>
+        <h3 id="guessmsg"></h3>
+    </div>
+    <div class="reloadmsg">
+        <p>By Yuvraj Darshankar 👑💙</p>
+        <p>Reload the Page to Restart the Game</p>
+    </div>
+</body>
+</html>

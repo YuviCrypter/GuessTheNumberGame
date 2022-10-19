@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+*{
+    margin: 0;
+}
+body{
+    background-color: #E0E5EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #E0E5EC;
+    width: 90vw;
+    color: #6d7581;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 2px;
+    box-shadow: -9px -9px 16px -2px rgba(255, 255, 255,0.5) ,9px 9px 16px -2px rgba(163, 177, 198,0.6);
+    text-shadow: 0px 0px 5px white;
+}
+.container{
+    margin-top: 17vh;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 25px;
+    box-shadow: -19px -19px 50px -10px rgba(255, 255, 255,0.5) ,19px 19px 50px -10px rgba(163, 177, 198,0.6);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container>p{
+    padding: 10px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+}
+.container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:auto;
+    justify-content: space-evenly;
+    
+}
+.container>div>input{
+    border: none;
+    height: 40px;
+    width: 90%;
+    border-radius: 5px;
+    /* box-shadow: inset 8px 8px 20px -8px rgba(0,0,0,0.3); */
+    box-shadow:inset -9px -9px 16px -2px rgba(255, 255, 255,0.5) , inset 9px 9px 16px -2px rgba(163, 177, 198,0.6);
+    padding-left: 14px;
+    font-size: 20px;
+}
+
+.container>div>button{
+    width: 20vw;
+    border: none;
+    background-color: #E0E5EC;
+    padding: 15px;
+    box-shadow: -9px -9px 16px -2px rgba(255, 255, 255,0.5) ,9px 9px 16px -2px rgba(163, 177, 198,0.6);
+    border-radius: 10px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+}
+.container>h3{
+    width: 100%;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 1px;
+}
+.players{
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+}
+.players>button{
+    border:none;
+    padding: 10px;
+    width: 50px;
+    font-size: 20px;
+    background-color: #E0E5EC;
+    box-shadow: -9px -9px 16px -2px rgba(255, 255, 255,0.5) ,9px 9px 16px -2px rgba(163, 177, 198,0.6);
+    border-radius: 16px;
+    
+    margin-left: 10px;
+}
+.reloadmsg
+{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 95% ;
+    bottom: 0;
+    padding: 10px;
+}
