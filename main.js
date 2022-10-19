@@ -39,6 +39,9 @@ function getValueFromUser(){
     if(gameStarted == false){
         var input = document.getElementById("ans");
         max = parseInt(input.value);
+        if(isNaN(max) || max<1){
+            max=1;
+        }
         console.log(max);
         generateAns();
         gameStarted = true;
@@ -48,6 +51,9 @@ function getValueFromUser(){
     document.getElementById("btn").disabled = true;
     var input = document.getElementById("ans");
     guess = parseInt(input.value);
+    if(isNaN(guess)){
+        guess=0;
+    }
     console.log(guess);
     if(guess != ans){
         if(guess > ans){
