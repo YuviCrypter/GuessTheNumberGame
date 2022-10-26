@@ -100,3 +100,6 @@ h2{
     bottom: 0;
     padding: 10px;
 }
+#btn:hover{
+    background-color: #ebf0f7;
+}
